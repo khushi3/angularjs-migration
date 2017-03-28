@@ -5,7 +5,7 @@ import {ContactsService} from './contacts-service/contacts-service'
 
 declare let angular: any;
 upgradeAdapter.addProvider(ContactsListItemComponent);
-
+upgradeAdapter.addProvider(ContactsService);
 angular.module('contacts-list-item-component', [])
         .directive('contactsListItemComponent', upgradeAdapter.downgradeNg2Component(ContactsListItemComponent));
 angular.module('contact-detail-component')
